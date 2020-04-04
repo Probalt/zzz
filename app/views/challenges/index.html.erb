@@ -1,0 +1,8 @@
+<h1>Challenges/index</h1>
+
+<% @challenges.each do |challenge| %>
+	<div class="chabox d-flex">	
+		<%= challenge.badge %>
+		<h2><%= challenge.title %></h2>
+	</div>
+<% end %>

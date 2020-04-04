@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  devise_for :users
+  resources :challenges, only: [:show, :index]
+  resources :commits, only: [:new, :create, :show, :index, :destroy, :edit, :update]
+  root to: 'challenges#index'
 end
