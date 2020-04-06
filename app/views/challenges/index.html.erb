@@ -1,6 +1,8 @@
-<div class="home d-flex">
-	<%= image_tag("logo-full-white", :alt => "logo", :id => "logo") %>
-	<h1>World after crisis</h1>
+<div class="home pt-5">
+	<div id="prez" class="d-flex">
+		<%= image_tag("logo-square", :alt => "logo", :id => "logo") %>
+		<h1>WORLD AFTER CRISIS</h1>
+	</div>
 </div>
 <br>
 <br>
@@ -8,6 +10,6 @@
 <% @challenges.each do |challenge| %>
 	<div class="chabox d-flex">	
 		<img src="<%= challenge.badge %>" alt="#{challenge}">	
-		<h2 class="pl-3"><%= challenge.title %></h2>
+		<p class="pl-3"><%= challenge.title %></p>
 	</div>
 <% end %>
