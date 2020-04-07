@@ -21,9 +21,18 @@ body {
 	margin: 10px;
 }
 #logo {
-	width: 200px;
-	height: 200px;
+	width: 130px;
+	height: 130px;
 }
 #prez h1{
 	align-self: flex-end;
 } 
+
+#map {
+	height: 100px;
+}
+
+#table, #map, #map-log, #diagnostics-log {
+	width: 960px;
+	margin: 10px 0;
+}
